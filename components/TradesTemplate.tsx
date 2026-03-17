@@ -142,10 +142,11 @@ export default function TradesTemplate({
         {/* Image placeholder */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-gray-900/60 z-10" />
         <div className="absolute inset-0 bg-gray-800 z-0">
-          {/* TODO: AI-generated hero image for {config.name} */}
-          <div className="w-full h-full flex items-center justify-center text-gray-600 text-sm">
-            [{config.name} hero image]
-          </div>
+          <img
+            src="/images/trades/hero.png"
+            alt={`${config.name} professional at work`}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="relative z-20 max-w-6xl mx-auto px-4 py-20 md:py-28">
@@ -233,14 +234,17 @@ export default function TradesTemplate({
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {config.services.map((service) => (
+            {config.services.map((service, i) => (
               <div
                 key={service.title}
                 className={`bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-200 hover:shadow-md transition-all group`}
               >
-                {/* Image placeholder */}
-                <div className="w-full h-40 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-gray-400 text-xs">
-                  [{service.title} image]
+                <div className="w-full h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                  <img
+                    src={`/images/trades/service-${i + 1}.png`}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-700">
                   {service.title}
@@ -258,9 +262,12 @@ export default function TradesTemplate({
       <section className="bg-gray-50 py-16 md:py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image placeholder */}
-            <div className="bg-gray-200 rounded-2xl h-80 md:h-96 flex items-center justify-center text-gray-400">
-              [{config.name} team/work image]
+            <div className="rounded-2xl h-80 md:h-96 overflow-hidden">
+              <img
+                src="/images/trades/team.png"
+                alt={`${name} team`}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <div>
