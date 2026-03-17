@@ -1,6 +1,6 @@
 import { getBusiness } from "@/lib/db";
 import { notFound } from "next/navigation";
-import LuxuryTemplate from "@/components/LuxuryTemplate";
+import LuxuryTemplateV2 from "@/components/LuxuryTemplateV2";
 
 export default async function LandscapeArchitectTemplate({
   params,
@@ -12,31 +12,30 @@ export default async function LandscapeArchitectTemplate({
   if (!business) return notFound();
 
   return (
-    <LuxuryTemplate
+    <LuxuryTemplateV2
       business={business}
       config={{
         name: "Landscape Design",
-        tagline: "Landscape Architecture & Design",
-        accentColor: "sage",
-        heroHeading: (city) => `Outdoor Spaces That Define ${city} Living`,
+        tagline: "Landscape Architecture",
+        heroHeading: (city) => `Outdoor spaces worth living in, built for ${city}`,
         heroSubheading:
-          "We design landscapes that extend your home — outdoor kitchens, gardens, pools, and living spaces that feel effortless.",
-        ctaHeading: "Reimagine Your Outdoor Space",
+          "We design landscapes that extend your home — gardens, patios, pools, and outdoor rooms that feel effortless year-round.",
+        ctaHeading: "Rethink your outdoor space",
         ctaSubheading:
-          "Schedule a site visit and let's explore what's possible for your property.",
+          "Schedule a property visit. We'll assess what you have, explore what's possible, and sketch it out together.",
         services: [
-          { title: "Landscape Design", desc: "Custom landscape plans that complement your home's architecture and your lifestyle." },
-          { title: "Outdoor Living", desc: "Kitchens, fire pits, pergolas, and seating areas designed for entertaining." },
-          { title: "Pool & Spa Design", desc: "Infinity pools, natural pools, and spa retreats integrated into the landscape." },
-          { title: "Garden Design", desc: "Native plantings, edible gardens, and seasonal color that thrive in your climate." },
+          { title: "Landscape Design", desc: "Custom plans that complement your home's architecture and work with your land, not against it." },
+          { title: "Outdoor Living", desc: "Kitchens, fire pits, pergolas, and seating areas built for real entertaining." },
+          { title: "Pool & Water Features", desc: "Pools, spas, fountains, and ponds integrated naturally into the landscape." },
+          { title: "Garden Design", desc: "Native plantings, edible gardens, and seasonal color chosen for your specific climate and soil." },
           { title: "Hardscape", desc: "Patios, walkways, retaining walls, and driveways in natural stone and premium materials." },
-          { title: "Lighting Design", desc: "Architectural landscape lighting that transforms your property after dark." },
+          { title: "Landscape Lighting", desc: "Architectural lighting that transforms your property after dark — safe, dramatic, inviting." },
         ],
         processSteps: [
-          { title: "Site Analysis", desc: "We study your property — soil, sun, drainage, views, and existing features." },
-          { title: "Concept Design", desc: "Detailed renderings and plans that bring your outdoor vision to life." },
-          { title: "Installation", desc: "Expert crews handle every element from grading to final planting." },
-          { title: "Ongoing Care", desc: "Optional maintenance plans to keep your landscape pristine year-round." },
+          { title: "Site Analysis", desc: "We study your property — soil, sun, drainage, views, and what's already working." },
+          { title: "Concept Design", desc: "Detailed plans and renderings that bring your outdoor vision to life before we dig." },
+          { title: "Installation", desc: "Expert crews handle grading, planting, stonework, and irrigation." },
+          { title: "Seasonal Care", desc: "Optional maintenance plans to keep everything pristine as it matures." },
         ],
       }}
     />

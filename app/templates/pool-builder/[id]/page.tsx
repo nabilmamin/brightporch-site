@@ -1,6 +1,6 @@
 import { getBusiness } from "@/lib/db";
 import { notFound } from "next/navigation";
-import LuxuryTemplate from "@/components/LuxuryTemplate";
+import LuxuryTemplateV2 from "@/components/LuxuryTemplateV2";
 
 export default async function PoolBuilderTemplate({
   params,
@@ -12,31 +12,30 @@ export default async function PoolBuilderTemplate({
   if (!business) return notFound();
 
   return (
-    <LuxuryTemplate
+    <LuxuryTemplateV2
       business={business}
       config={{
         name: "Pool Builder",
-        tagline: "Custom Pool Design & Construction",
-        accentColor: "navy",
-        heroHeading: (city) => `${city}'s Premier Pool Builder`,
+        tagline: "Custom Pool Design & Build",
+        heroHeading: (city) => `Your backyard, reimagined — custom pools in ${city}`,
         heroSubheading:
-          "Custom pools, spas, and water features designed to transform your backyard into a private resort.",
-        ctaHeading: "Ready for Your Dream Pool?",
+          "We design and build pools that turn your backyard into the place everyone wants to be. Custom shapes, finishes, and features — no templates.",
+        ctaHeading: "Ready to start your pool project?",
         ctaSubheading:
-          "Book a free backyard consultation. We'll design something extraordinary together.",
+          "Book a free backyard consultation. We'll measure, sketch ideas, and give you a realistic timeline and budget.",
         services: [
-          { title: "Custom Pools", desc: "Freeform, geometric, infinity edge — every pool designed from scratch for your space." },
-          { title: "Spas & Hot Tubs", desc: "Built-in spas with custom tile, jets, and lighting for year-round relaxation." },
-          { title: "Water Features", desc: "Waterfalls, grottos, bubblers, and fountains that add drama and sound." },
-          { title: "Pool Renovations", desc: "Resurface, retile, and modernize your existing pool to feel brand new." },
-          { title: "Outdoor Living", desc: "Pool houses, cabanas, outdoor bars, and fire features around the pool." },
-          { title: "Automation", desc: "Smart pool controls for lighting, temperature, cleaning, and chemical balance." },
+          { title: "Custom Pool Design", desc: "Freeform, geometric, infinity edge — every pool drawn from scratch for your specific yard." },
+          { title: "Spas & Hot Tubs", desc: "Built-in spas with custom tile, hydrotherapy jets, and integrated lighting." },
+          { title: "Water Features", desc: "Waterfalls, bubblers, deck jets, and grottos that add texture and sound." },
+          { title: "Pool Renovation", desc: "Resurface, retile, or completely reimagine your existing pool." },
+          { title: "Outdoor Living", desc: "Pool houses, shade structures, outdoor bars, and fire features around the water." },
+          { title: "Smart Pool Systems", desc: "Automated controls for lighting, temperature, cleaning, and chemical balance from your phone." },
         ],
         processSteps: [
-          { title: "Backyard Consultation", desc: "We visit your property, discuss your vision, and take measurements." },
-          { title: "3D Design", desc: "Photorealistic 3D renderings so you can see your pool before we break ground." },
-          { title: "Construction", desc: "Expert excavation, plumbing, steel, and finishing — typically 8-12 weeks." },
-          { title: "Final Reveal", desc: "Fill day, equipment walkthrough, and your first swim." },
+          { title: "Backyard Visit", desc: "We walk your property, take measurements, and listen to how you want to use the space." },
+          { title: "3D Design", desc: "Photorealistic renders so you can see your pool in your actual backyard before we break ground." },
+          { title: "Construction", desc: "Excavation through finish — typically 8 to 12 weeks with weekly progress updates." },
+          { title: "Fill Day", desc: "Equipment walkthrough, water chemistry tutorial, and your first swim." },
         ],
       }}
     />

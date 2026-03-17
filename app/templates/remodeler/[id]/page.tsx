@@ -1,6 +1,6 @@
 import { getBusiness } from "@/lib/db";
 import { notFound } from "next/navigation";
-import LuxuryTemplate from "@/components/LuxuryTemplate";
+import LuxuryTemplateV2 from "@/components/LuxuryTemplateV2";
 
 export default async function RemodelerTemplate({
   params,
@@ -12,31 +12,30 @@ export default async function RemodelerTemplate({
   if (!business) return notFound();
 
   return (
-    <LuxuryTemplate
+    <LuxuryTemplateV2
       business={business}
       config={{
         name: "Remodeling",
         tagline: "Kitchen & Bath Remodeling",
-        accentColor: "terracotta",
-        heroHeading: (city) => `${city}'s Trusted Remodeling Experts`,
+        heroHeading: (city) => `Kitchens and baths worth coming home to, in ${city}`,
         heroSubheading:
-          "Kitchen and bathroom transformations that elevate your home — designed with care, built with precision.",
-        ctaHeading: "Ready to Remodel?",
+          "We remodel the rooms that matter most — with materials that last, layouts that work, and details you'll notice every day.",
+        ctaHeading: "Thinking about a remodel?",
         ctaSubheading:
-          "Schedule a free in-home consultation. We'll measure, plan, and quote — no pressure.",
+          "Schedule a free in-home visit. We'll measure, discuss options, and give you a clear quote — no pressure.",
         services: [
           { title: "Kitchen Remodeling", desc: "Complete kitchen transformations — cabinetry, countertops, islands, appliances, and lighting." },
-          { title: "Bathroom Remodeling", desc: "Spa-inspired bathrooms with custom tile, walk-in showers, and premium fixtures." },
-          { title: "Whole-Home Renovation", desc: "Open up floor plans, update finishes, and modernize your entire living space." },
-          { title: "Additions", desc: "Room additions, bump-outs, and second stories that blend seamlessly with your home." },
-          { title: "Basement Finishing", desc: "Transform unused space into home theaters, gyms, guest suites, or offices." },
-          { title: "Aging-in-Place", desc: "Accessible design modifications that let you stay in the home you love." },
+          { title: "Bathroom Remodeling", desc: "Walk-in showers, custom tile, double vanities, and fixtures that feel like a daily upgrade." },
+          { title: "Whole-Home Renovation", desc: "Open floor plans, new finishes, and a modern feel throughout your entire home." },
+          { title: "Room Additions", desc: "Bump-outs, second stories, and new rooms that blend with your home's existing character." },
+          { title: "Basement Finishing", desc: "Turn unused space into a theater, gym, guest suite, or home office." },
+          { title: "Accessible Design", desc: "Modifications that let you stay in the home you love — wider doors, grab bars, walk-in tubs." },
         ],
         processSteps: [
-          { title: "In-Home Consultation", desc: "We visit your home, listen to your goals, and take detailed measurements." },
-          { title: "Design & Selection", desc: "Visit our showroom to choose materials, finishes, and fixtures." },
-          { title: "Construction", desc: "Dedicated crew with daily cleanup. We respect your home and your schedule." },
-          { title: "Final Reveal", desc: "Walkthrough, punch list, and the moment you see it all come together." },
+          { title: "In-Home Visit", desc: "We see your space, hear your goals, and take detailed measurements." },
+          { title: "Design & Selection", desc: "Visit our showroom to pick materials, finishes, and fixtures you can touch." },
+          { title: "Construction", desc: "Dedicated crew, daily cleanup, and a project manager who keeps everything on track." },
+          { title: "Final Walkthrough", desc: "Punch list, final details, and the moment it all comes together." },
         ],
       }}
     />
