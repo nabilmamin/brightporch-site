@@ -95,7 +95,7 @@ export async function POST(request: Request) {
   let rawText = subject;
   if (emailId && process.env.RESEND_API_KEY) {
     try {
-      const res = await fetch(`https://api.resend.com/emails/${emailId}`, {
+      const res = await fetch(`https://api.resend.com/emails/receiving/${emailId}`, {
         headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}` },
       });
       if (res.ok) {
