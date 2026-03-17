@@ -7,13 +7,13 @@ export async function POST(
 ) {
   const { id } = await params;
   const businessId = parseInt(id, 10);
-  const business = getBusiness(businessId);
+  const business = await getBusiness(businessId);
 
   if (!business) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
-  setOptedOut(businessId);
+  await setOptedOut(businessId);
 
   return NextResponse.json({ success: true, message: "Unsubscribed successfully" });
 }

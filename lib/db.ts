@@ -1,18 +1,9 @@
-import Database from "better-sqlite3";
-import path from "path";
+import { createClient } from "@libsql/client";
 
-const DB_PATH = path.join(process.cwd(), "..", "leadgen.db");
-
-let db: Database.Database | null = null;
-
-export function getDb(): Database.Database {
-  if (!db) {
-    db = new Database(DB_PATH, { readonly: false });
-    db.pragma("journal_mode = WAL");
-    db.pragma("foreign_keys = ON");
-  }
-  return db;
-}
+const db = createClient({
+  url: process.env.TURSO_DATABASE_URL!,
+  authToken: process.env.TURSO_AUTH_TOKEN,
+});
 
 export interface Business {
   id: number;
@@ -20,6 +11,7 @@ export interface Business {
   name: string;
   address: string;
   phone: string;
+  email: string | null;
   website: string;
   rating: number | null;
   reviews_count: number | null;
@@ -35,16 +27,17 @@ export interface Business {
   opted_out: number;
 }
 
-export function getBusiness(id: number): Business | undefined {
-  const db = getDb();
-  return db.prepare("SELECT * FROM businesses WHERE id = ?").get(id) as
-    | Business
-    | undefined;
+export async function getBusiness(id: number): Promise<Business | undefined> {
+  const result = await db.execute({
+    sql: "SELECT * FROM businesses WHERE id = ?",
+    args: [id],
+  });
+  return result.rows[0] as unknown as Business | undefined;
 }
 
-export function setOptedOut(id: number): void {
-  const db = getDb();
-  db.prepare(
-    "UPDATE businesses SET opted_out = 1, updated_at = datetime('now') WHERE id = ?"
-  ).run(id);
+export async function setOptedOut(id: number): Promise<void> {
+  await db.execute({
+    sql: "UPDATE businesses SET opted_out = 1, updated_at = datetime('now') WHERE id = ?",
+    args: [id],
+  });
 }

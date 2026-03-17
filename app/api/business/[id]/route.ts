@@ -6,7 +6,7 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const business = getBusiness(parseInt(id, 10));
+  const business = await getBusiness(parseInt(id, 10));
 
   if (!business) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
