@@ -129,7 +129,7 @@ export default function TradesTemplate({
             </span>
           </div>
           <a
-            href={`tel:${phone}`}
+            href="#"
             className={`${c.button} ${c.buttonHover} text-white px-6 py-3 rounded-lg font-bold text-sm transition-colors`}
           >
             Call {phone}
@@ -179,13 +179,13 @@ export default function TradesTemplate({
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={`tel:${phone}`}
+                href="#"
                 className={`${c.button} ${c.buttonHover} text-white px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors`}
               >
                 Get a Free Quote
               </a>
               <a
-                href={`tel:${phone}`}
+                href="#"
                 className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-white/10 transition-colors"
               >
                 {phone}
@@ -300,7 +300,7 @@ export default function TradesTemplate({
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`tel:${phone}`}
+              href="#"
               className={`${c.button} ${c.buttonHover} text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors`}
             >
               Call {phone}

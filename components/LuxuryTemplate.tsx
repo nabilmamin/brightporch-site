@@ -116,13 +116,13 @@ export default function LuxuryTemplate({
           </div>
           <div className="flex items-center gap-6">
             <a
-              href={`tel:${phone}`}
+              href="#"
               className="hidden sm:block text-sm text-neutral-500 hover:text-neutral-900 transition-colors"
             >
               {phone}
             </a>
             <a
-              href={`tel:${phone}`}
+              href="#"
               className={`${p.primary} ${p.primaryHover} text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors`}
             >
               Schedule a Consultation
@@ -168,13 +168,13 @@ export default function LuxuryTemplate({
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href={`tel:${phone}`}
+                  href="#"
                   className={`${p.primary} ${p.primaryHover} text-white px-8 py-3.5 rounded-full text-sm font-medium transition-colors text-center`}
                 >
                   Book a Free Consultation
                 </a>
                 <a
-                  href={`tel:${phone}`}
+                  href="#"
                   className="border border-neutral-200 text-neutral-700 px-8 py-3.5 rounded-full text-sm font-medium hover:border-neutral-300 transition-colors text-center"
                 >
                   View Our Work
@@ -306,13 +306,13 @@ export default function LuxuryTemplate({
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`tel:${phone}`}
+              href="#"
               className={`${p.primary} ${p.primaryHover} text-white px-10 py-3.5 rounded-full text-sm font-medium transition-colors`}
             >
               Schedule a Consultation
             </a>
             <a
-              href={`tel:${phone}`}
+              href="#"
               className="border border-neutral-200 text-neutral-700 px-10 py-3.5 rounded-full text-sm font-medium hover:border-neutral-300 transition-colors"
             >
               {phone}
