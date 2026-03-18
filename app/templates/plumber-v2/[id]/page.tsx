@@ -144,7 +144,7 @@ export default async function PlumberV2Template({
               <img
                 src="/images/trades/hero.png"
                 alt={`${name} professional plumber`}
-                className="absolute inset-0 w-full h-full object-cover object-top"
+                className="absolute inset-0 w-full h-full object-cover object-[center_15%]"
               />
             </div>
           </div>
