@@ -145,7 +145,7 @@ export default function TradesTemplate({
           <img
             src="/images/trades/hero.png"
             alt={`${config.name} professional at work`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
 
