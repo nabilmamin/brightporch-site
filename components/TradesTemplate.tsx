@@ -145,11 +145,11 @@ export default function TradesTemplate({
           <img
             src="/images/trades/hero.png"
             alt={`${config.name} professional at work`}
-            className="w-full h-full object-cover object-[center_20%]"
+            className="w-full h-full object-cover object-top"
           />
         </div>
 
-        <div className="relative z-20 max-w-6xl mx-auto px-4 py-28 md:py-36">
+        <div className="relative z-20 max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-2xl">
             {rating > 0 && (
               <div className="flex items-center gap-2 mb-6">
