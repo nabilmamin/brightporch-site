@@ -213,9 +213,19 @@ export default function LuxuryTemplateV2({
               >
                 How we work together
               </h2>
-              <p className="text-[#787774] text-[15px] leading-[1.65] max-w-md">
+              <p className="text-[#787774] text-[15px] leading-[1.65] max-w-md mb-8">
                 Every project follows a clear, collaborative process — no surprises, no guesswork.
               </p>
+              <div
+                className="overflow-hidden border border-[#EAEAEA] aspect-[4/3]"
+                style={{ borderRadius: "8px" }}
+              >
+                <img
+                  src="/images/luxury/process.png"
+                  alt="Design process workspace"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
             <div>
