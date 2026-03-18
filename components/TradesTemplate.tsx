@@ -234,18 +234,11 @@ export default function TradesTemplate({
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {config.services.map((service, i) => (
+            {config.services.map((service) => (
               <div
                 key={service.title}
                 className={`bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-200 hover:shadow-md transition-all group`}
               >
-                <div className="w-full h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
-                  <img
-                    src={`/images/trades/service-${i + 1}.png`}
-                    alt={service.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-700">
                   {service.title}
                 </h3>
