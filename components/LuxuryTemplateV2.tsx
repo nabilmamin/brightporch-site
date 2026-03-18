@@ -6,6 +6,7 @@ interface Service {
 interface VerticalConfig {
   name: string;
   tagline: string;
+  heroImage: string;
   heroHeading: (city: string) => string;
   heroSubheading: string;
   services: Service[];
@@ -134,10 +135,14 @@ export default function LuxuryTemplateV2({
             {/* Hero image — right */}
             <div className="relative">
               <div
-                className="bg-[#F0EFEB] aspect-[3/4] flex items-center justify-center text-[#C4C2BD] text-sm border border-[#EAEAEA]"
+                className="aspect-[3/4] overflow-hidden border border-[#EAEAEA]"
                 style={{ borderRadius: "8px" }}
               >
-                [{config.name} hero image]
+                <img
+                  src={config.heroImage}
+                  alt={`${config.name} showcase`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -175,13 +180,6 @@ export default function LuxuryTemplateV2({
           <div className="grid md:grid-cols-2 gap-px bg-[#EAEAEA] border border-[#EAEAEA]" style={{ borderRadius: "12px", overflow: "hidden" }}>
             {config.services.map((service) => (
               <div key={service.title} className="bg-white p-8 md:p-10 group">
-                {/* Service image placeholder */}
-                <div
-                  className="w-full h-48 bg-[#F7F6F3] mb-6 flex items-center justify-center text-[#C4C2BD] text-xs border border-[#EAEAEA]"
-                  style={{ borderRadius: "8px" }}
-                >
-                  [{service.title} image]
-                </div>
                 <h3 className="text-base font-semibold text-[#111] mb-2 tracking-tight">
                   {service.title}
                 </h3>
@@ -272,18 +270,26 @@ export default function LuxuryTemplateV2({
           {/* Asymmetric masonry-ish grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             <div
-              className="col-span-2 row-span-2 bg-[#F0EFEB] aspect-[4/3] flex items-center justify-center text-[#C4C2BD] text-sm border border-[#EAEAEA]"
+              className="col-span-2 row-span-2 overflow-hidden border border-[#EAEAEA]"
               style={{ borderRadius: "8px" }}
             >
-              [Featured project image]
+              <img
+                src="/images/luxury/portfolio-1.png"
+                alt="Featured project"
+                className="w-full h-full object-cover"
+              />
             </div>
             {Array.from({ length: 4 }).map((_, i) => (
               <div
                 key={i}
-                className="bg-[#F0EFEB] aspect-square flex items-center justify-center text-[#C4C2BD] text-xs border border-[#EAEAEA]"
+                className="aspect-square overflow-hidden border border-[#EAEAEA]"
                 style={{ borderRadius: "8px" }}
               >
-                [Project {i + 2}]
+                <img
+                  src={`/images/luxury/portfolio-${i + 2}.png`}
+                  alt={`Project ${i + 2}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>

@@ -17,6 +17,7 @@ export default async function HomeBuilderTemplate({
       config={{
         name: "Custom Home Builder",
         tagline: "Custom Home Building",
+        heroImage: "/images/luxury/hero-home-builder.png",
         heroHeading: (city) => `Homes built for how ${city} lives`,
         heroSubheading:
           "From raw land to move-in day — we build homes that reflect your family, your taste, and the way you want to live.",

@@ -17,6 +17,7 @@ export default async function InteriorDesignerTemplate({
       config={{
         name: "Interior Design",
         tagline: "Interior Design Studio",
+        heroImage: "/images/luxury/hero-interior-designer.png",
         heroHeading: (city) =>
           `Spaces that feel like you, designed in ${city}`,
         heroSubheading:

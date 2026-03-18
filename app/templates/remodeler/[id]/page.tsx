@@ -17,6 +17,7 @@ export default async function RemodelerTemplate({
       config={{
         name: "Remodeling",
         tagline: "Kitchen & Bath Remodeling",
+        heroImage: "/images/luxury/hero-remodeler.png",
         heroHeading: (city) => `Kitchens and baths worth coming home to, in ${city}`,
         heroSubheading:
           "We remodel the rooms that matter most — with materials that last, layouts that work, and details you'll notice every day.",

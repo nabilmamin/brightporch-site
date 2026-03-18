@@ -17,6 +17,7 @@ export default async function LandscapeArchitectTemplate({
       config={{
         name: "Landscape Design",
         tagline: "Landscape Architecture",
+        heroImage: "/images/luxury/hero-landscape-architect.png",
         heroHeading: (city) => `Outdoor spaces worth living in, built for ${city}`,
         heroSubheading:
           "We design landscapes that extend your home — gardens, patios, pools, and outdoor rooms that feel effortless year-round.",

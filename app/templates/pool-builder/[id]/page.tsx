@@ -17,6 +17,7 @@ export default async function PoolBuilderTemplate({
       config={{
         name: "Pool Builder",
         tagline: "Custom Pool Design & Build",
+        heroImage: "/images/luxury/hero-pool-builder.png",
         heroHeading: (city) => `Your backyard, reimagined — custom pools in ${city}`,
         heroSubheading:
           "We design and build pools that turn your backyard into the place everyone wants to be. Custom shapes, finishes, and features — no templates.",
