@@ -132,8 +132,8 @@ export default async function PlumberTemplate({
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="/images/trades/hero.png"
-            alt=""
+            src="https://plus.unsplash.com/premium_photo-1661342460125-3459f38b2003?w=1600&q=80&fm=jpg"
+            alt="Professional plumber at work"
             className="w-full h-full object-cover object-[center_15%] opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1a2744] via-[#1a2744]/90 to-[#1a2744]/70" />
@@ -274,37 +274,37 @@ export default async function PlumberTemplate({
                 title: "Emergency Repairs",
                 desc: "Burst pipes, gas leaks, and overflows — we arrive fast with a fully stocked truck. 24/7 with no after-hours fees.",
                 icon: "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z",
-                image: "/images/trades/service-1.png",
+                image: "https://plus.unsplash.com/premium_photo-1723874634715-246be2bb20ff?w=600&q=80&fm=jpg",
               },
               {
                 title: "Water Heaters",
                 desc: "Tank and tankless installation, repair, and replacement. We size it right so you never run out of hot water.",
                 icon: "M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z",
-                image: "/images/trades/service-2.png",
+                image: "https://plus.unsplash.com/premium_photo-1682125979416-7633eff814c9?w=600&q=80&fm=jpg",
               },
               {
                 title: "Drain Cleaning",
                 desc: "Camera inspection, hydro-jetting, and rooter service for stubborn clogs, slow drains, and sewer line backups.",
                 icon: "M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636",
-                image: "/images/trades/service-3.png",
+                image: "https://plus.unsplash.com/premium_photo-1734029815125-58149f75742e?w=600&q=80&fm=jpg",
               },
               {
                 title: "Leak Detection",
                 desc: "Thermal imaging and acoustic detection to find hidden leaks in walls, slabs, and underground — no demolition needed.",
                 icon: "M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z",
-                image: "/images/trades/service-4.png",
+                image: "https://images.unsplash.com/photo-1650246363606-a2402ec42b08?w=600&q=80&fm=jpg",
               },
               {
                 title: "Pipe Repair & Repiping",
                 desc: "Fix corroded, cracked, or burst pipes. Full-home repiping for older homes with outdated galvanized or polybutylene.",
                 icon: "M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085",
-                image: "/images/trades/service-5.png",
+                image: "https://images.unsplash.com/photo-1560883123-04646fef95df?w=600&q=80&fm=jpg",
               },
               {
                 title: "Bathroom & Kitchen",
                 desc: "Faucets, toilets, garbage disposals, and complete plumbing for kitchen and bathroom renovations.",
                 icon: "M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819",
-                image: "/images/trades/service-6.png",
+                image: "https://images.unsplash.com/photo-1758448018619-4cbe2250b9ad?w=600&q=80&fm=jpg",
               },
             ].map((service) => (
               <div
@@ -339,7 +339,7 @@ export default async function PlumberTemplate({
             {/* Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl shadow-[#1a2744]/10">
               <img
-                src="/images/trades/team.png"
+                src="https://images.unsplash.com/photo-1659353589251-8da8f0a93599?w=800&q=80&fm=jpg"
                 alt={`${name} team`}
                 className="w-full h-auto"
               />
