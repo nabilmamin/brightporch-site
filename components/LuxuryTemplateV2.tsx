@@ -195,37 +195,40 @@ export default function LuxuryTemplateV2({
       {/* Process */}
       <section className="py-24 md:py-32 px-6 bg-white border-y border-[#EAEAEA]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-[1.1fr_1fr] gap-16 md:gap-24 items-start">
-            <div>
-              <span
-                className="text-[11px] uppercase tracking-[0.08em] font-medium text-[#346538] bg-[#EDF3EC] px-3 py-1 inline-block mb-5"
-                style={{ borderRadius: "9999px" }}
-              >
-                Process
-              </span>
-              <h2
-                className="text-[2.2rem] md:text-[2.8rem] text-[#111] leading-[1.1] mb-6"
-                style={{
-                  fontFamily: "'Instrument Serif', 'Playfair Display', 'Newsreader', serif",
-                  letterSpacing: "-0.02em",
-                  fontWeight: 400,
-                }}
-              >
-                How we work together
-              </h2>
-              <p className="text-[#787774] text-[15px] leading-[1.65] max-w-md mb-8">
-                Every project follows a clear, collaborative process — no surprises, no guesswork.
-              </p>
-              <div
-                className="overflow-hidden border border-[#EAEAEA] aspect-[4/3]"
-                style={{ borderRadius: "8px" }}
-              >
-                <img
-                  src="/images/luxury/process.png"
-                  alt="Design process workspace"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          {/* Section header */}
+          <div className="mb-14">
+            <span
+              className="text-[11px] uppercase tracking-[0.08em] font-medium text-[#346538] bg-[#EDF3EC] px-3 py-1 inline-block mb-5"
+              style={{ borderRadius: "9999px" }}
+            >
+              Process
+            </span>
+            <h2
+              className="text-[2.2rem] md:text-[2.8rem] text-[#111] leading-[1.1] mb-4"
+              style={{
+                fontFamily: "'Instrument Serif', 'Playfair Display', 'Newsreader', serif",
+                letterSpacing: "-0.02em",
+                fontWeight: 400,
+              }}
+            >
+              How we work together
+            </h2>
+            <p className="text-[#787774] text-[15px] leading-[1.65] max-w-lg">
+              Every project follows a clear, collaborative process — no surprises, no guesswork.
+            </p>
+          </div>
+
+          {/* Image + Steps side by side */}
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+            <div
+              className="overflow-hidden border border-[#EAEAEA] aspect-[4/3]"
+              style={{ borderRadius: "8px" }}
+            >
+              <img
+                src="/images/luxury/process.png"
+                alt="Design process workspace"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <div>
