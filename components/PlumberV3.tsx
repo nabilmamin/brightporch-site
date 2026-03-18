@@ -195,17 +195,16 @@ export default function PlumberV3({ business }: { business: BusinessData }) {
               className="text-[2.8rem] md:text-[3.8rem] lg:text-[4.5rem] text-white leading-[1.05] mb-6"
               style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: "-0.03em" }}
             >
-              Water doesn&apos;t wait.{" "}
-              <span className="text-[#5BBAD5]">Neither do we.</span>
+              {city} plumbers{" "}
+              <span className="text-[#5BBAD5]">you can count on</span>
             </h1>
 
             <p
               className="text-[17px] md:text-[19px] text-white/55 leading-[1.7] max-w-xl mb-10"
               style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300 }}
             >
-              Burst pipes, backed-up drains, no hot water — we pick up the phone,
-              show up fast, and fix it right. Upfront pricing before we start.
-              Always.
+              Burst pipes, backed-up drains, no hot water. We pick up the phone,
+              show up on time, and give you a straight price before we start.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-10">
@@ -303,7 +302,7 @@ export default function PlumberV3({ business }: { business: BusinessData }) {
               className="text-[2rem] md:text-[2.8rem] text-[#1C2B3A] leading-[1.1] max-w-lg"
               style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: "-0.02em" }}
             >
-              Every plumbing problem has a fix. We know them all.
+              What we fix
             </h2>
           </div>
 
@@ -409,22 +408,20 @@ export default function PlumberV3({ business }: { business: BusinessData }) {
                 className="text-[2rem] md:text-[2.8rem] text-[#1C2B3A] leading-[1.1] mb-6"
                 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: "-0.02em" }}
               >
-                The price we quote is the price you pay.{" "}
-                <span className="text-[#1C2B3A]/30">Period.</span>
+                The price we quote is the price you pay.
               </h2>
               <div
                 className="space-y-4 text-[16px] text-[#1C2B3A]/55 leading-[1.75]"
                 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300 }}
               >
                 <p>
-                  We know the reputation plumbers have. The vague quote that doubles
-                  once they start. The &ldquo;while we&apos;re here&rdquo; upsell. The bill that
-                  makes you wish you&apos;d just let the faucet drip.
+                  We look at the problem first, explain what we found, and give
+                  you a written price before any work starts. If the job takes longer
+                  than we expected, that&apos;s on us.
                 </p>
                 <p>
-                  That&apos;s not us. We diagnose, we explain what we found in plain English,
-                  and we give you a fixed price. If the job takes longer than expected,
-                  that&apos;s on us — not your wallet.
+                  We&apos;re not going to upsell you on things you don&apos;t need. If your
+                  water heater has a few more years in it, we&apos;ll tell you that.
                 </p>
               </div>
             </div>
@@ -479,7 +476,7 @@ export default function PlumberV3({ business }: { business: BusinessData }) {
               className="text-[2rem] md:text-[2.8rem] text-white leading-[1.1]"
               style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: "-0.02em" }}
             >
-              Why they called us back
+              What our customers say
             </h2>
           </div>
 
@@ -538,8 +535,8 @@ export default function PlumberV3({ business }: { business: BusinessData }) {
             className="text-[2.5rem] md:text-[3.5rem] text-white leading-[1.1] mb-6"
             style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: "-0.03em" }}
           >
-            Leaking money on{" "}
-            <span className="text-[#5BBAD5]">bad plumbing?</span>
+            Need a{" "}
+            <span className="text-[#5BBAD5]">plumber?</span>
           </h2>
           <p
             className="text-[17px] text-white/45 leading-[1.7] max-w-lg mx-auto mb-10"

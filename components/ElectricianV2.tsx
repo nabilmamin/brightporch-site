@@ -181,17 +181,16 @@ export default function ElectricianV2({ business }: { business: BusinessData }) 
               className="text-[2.8rem] md:text-[3.8rem] lg:text-[4.5rem] text-white leading-[1.05] mb-6"
               style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, letterSpacing: "-0.03em" }}
             >
-              Electrical work{" "}
-              <span className="text-[#FACC15]">done right</span>{" "}
-              the first time
+              Licensed electricians{" "}
+              <span className="text-[#FACC15]">in {city}</span>
             </h1>
 
             <p
               className="text-[17px] md:text-[19px] text-white/55 leading-[1.7] max-w-xl mb-10"
               style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 300 }}
             >
-              From emergency repairs to full rewires — licensed electricians who
-              show up on time, explain what they find, and never cut corners on safety.
+              Panel upgrades, rewiring, lighting, EV chargers. We show up on time,
+              explain what we find, and do the work to code. Every time.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-10">
@@ -269,7 +268,7 @@ export default function ElectricianV2({ business }: { business: BusinessData }) 
               className="text-[2rem] md:text-[2.8rem] text-white leading-[1.1] max-w-lg"
               style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, letterSpacing: "-0.02em" }}
             >
-              Electrical services you can trust
+              What we do
             </h2>
           </div>
 
@@ -344,8 +343,8 @@ export default function ElectricianV2({ business }: { business: BusinessData }) 
                 className="text-[16px] text-[#0A0A0A]/60 leading-[1.7] mb-8 max-w-md"
                 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400 }}
               >
-                Don&apos;t wait on an electrical problem. Sparks, burning smells, and dead
-                circuits can escalate fast. Call us — we&apos;ll be there.
+                Electrical problems can get worse fast. If something doesn&apos;t look
+                or smell right, give us a call. We answer around the clock.
               </p>
               <a
                 href={`tel:${phone}`}
@@ -458,15 +457,15 @@ export default function ElectricianV2({ business }: { business: BusinessData }) 
             className="text-[2.5rem] md:text-[3.5rem] text-white leading-[1.1] mb-6"
             style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, letterSpacing: "-0.03em" }}
           >
-            Ready for electrical work{" "}
-            <span className="text-[#FACC15]">done right?</span>
+            Need an{" "}
+            <span className="text-[#FACC15]">electrician?</span>
           </h2>
           <p
             className="text-[17px] text-white/45 leading-[1.7] max-w-lg mx-auto mb-10"
             style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 300 }}
           >
-            Free estimates on all jobs. No surprises, no hidden fees.
-            Just honest work by licensed electricians.
+            Free estimates on all jobs. We show up on time, do the work to code,
+            and clean up when we&apos;re done.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
