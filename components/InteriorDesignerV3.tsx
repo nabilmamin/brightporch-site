@@ -11,31 +11,28 @@ interface BusinessData {
 }
 
 const PORTFOLIO_PROJECTS = [
-  { src: "/images/interior-designer/portfolio-hero.jpg", title: "Modern Living Room", location: "Buckhead" },
-  { src: "/images/interior-designer/portfolio-1.jpg", title: "Kitchen Renovation", location: "Midtown" },
-  { src: "/images/interior-designer/portfolio-2.jpg", title: "Primary Suite", location: "Brookhaven" },
-  { src: "/images/interior-designer/portfolio-3.jpg", title: "Open Floor Plan", location: "Ansley Park" },
-  { src: "/images/interior-designer/portfolio-4.jpg", title: "Cozy Reading Nook", location: "Virginia Highland" },
-  { src: "/images/interior-designer/portfolio-5.jpg", title: "Dining Room", location: "Druid Hills" },
+  { src: "/images/interior-designer/portfolio-hero.jpg", title: "Modern Living Room" },
+  { src: "/images/interior-designer/portfolio-1.jpg", title: "Kitchen Renovation" },
+  { src: "/images/interior-designer/portfolio-2.jpg", title: "Primary Suite" },
+  { src: "/images/interior-designer/portfolio-3.jpg", title: "Open Floor Plan" },
+  { src: "/images/interior-designer/portfolio-4.jpg", title: "Cozy Reading Nook" },
+  { src: "/images/interior-designer/portfolio-5.jpg", title: "Dining Room" },
 ];
 
 const TESTIMONIALS = [
   {
     text: "She transformed our dated living room into something we never want to leave. Every detail was considered — the textures, the light, how the room flows when we entertain.",
     name: "Sarah M.",
-    neighborhood: "Buckhead",
     title: "Homeowner",
   },
   {
     text: "We gave her a blank slate and a tight timeline. She delivered a home that feels like us — warm, collected, not a showroom. Our friends can't believe it's the same house.",
     name: "David & Rachel K.",
-    neighborhood: "Midtown",
     title: "New Construction",
   },
   {
     text: "Working with her was like having a creative partner who also happens to be incredibly organized. On budget, on time, and the result exceeded every expectation.",
     name: "James L.",
-    neighborhood: "Ansley Park",
     title: "Full-Home Renovation",
   },
 ];
@@ -335,9 +332,6 @@ export default function InteriorDesignerV3({ business }: { business: BusinessDat
                 <p className="text-white text-[15px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>
                   {PORTFOLIO_PROJECTS[0].title}
                 </p>
-                <p className="text-white/60 text-[12px] tracking-[0.1em] uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  {PORTFOLIO_PROJECTS[0].location}, {city}
-                </p>
               </div>
             </div>
 
@@ -353,9 +347,6 @@ export default function InteriorDesignerV3({ business }: { business: BusinessDat
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <p className="text-white text-[14px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>
                     {project.title}
-                  </p>
-                  <p className="text-white/60 text-[11px] tracking-[0.1em] uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
-                    {project.location}
                   </p>
                 </div>
               </div>
@@ -439,7 +430,7 @@ export default function InteriorDesignerV3({ business }: { business: BusinessDat
         </div>
       </section>
 
-      {/* Testimonials — editorial cards with neighborhoods */}
+      {/* Testimonials */}
       <section className="py-24 md:py-32 px-6 bg-[#F5F3EE]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center">
@@ -485,7 +476,7 @@ export default function InteriorDesignerV3({ business }: { business: BusinessDat
                     className="text-[12px] text-[#8C8577] tracking-[0.05em]"
                     style={{ fontFamily: "'Inter', sans-serif" }}
                   >
-                    {t.title} — {t.neighborhood}, {city}
+                    {t.title}
                   </p>
                 </div>
               </div>
