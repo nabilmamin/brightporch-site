@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bright Porch — Fast, Modern Websites for Local Businesses",
-  description: "We build lightning-fast, mobile-first websites designed to turn visitors into customers. Built for plumbers, electricians, contractors, and more.",
+  title: "Bright Porch — Software Studio",
+  description: "We build websites, tools, and SaaS products for businesses with real problems. Research-driven, fast to ship, built to last.",
 };
 
 export default function RootLayout({
