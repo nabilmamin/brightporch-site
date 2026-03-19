@@ -1,17 +1,8 @@
+import ContactForm from "@/components/ContactForm";
+
 export default function Home() {
   return (
     <div className="min-h-[100dvh] bg-[#0A0A0A]">
-      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-      <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-
-      <style>{`
-        .font-archivo { font-family: 'Archivo', sans-serif; }
-        .font-space { font-family: 'Space Grotesk', sans-serif; }
-      `}</style>
-
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-[#0A0A0A]/95 backdrop-blur-sm border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
@@ -26,7 +17,7 @@ export default function Home() {
             </span>
           </div>
           <a
-            href="mailto:hello@brightporch.dev"
+            href="#contact"
             className="font-space text-[13px] font-medium text-[#0A0A0A] bg-white px-5 py-2.5 rounded-sm hover:bg-white/90 transition-colors cursor-pointer"
           >
             Get in Touch
@@ -51,24 +42,16 @@ export default function Home() {
               <span className="text-[#2563EB]">real problems.</span>
             </h1>
 
-            <p className="font-space text-lg md:text-xl text-white/40 leading-relaxed max-w-lg mb-10">
+            <p className="font-space text-lg md:text-xl text-white/50 leading-relaxed max-w-lg mb-10">
               Websites, tools, and SaaS products for businesses with specific pain points. We find the problem, build the solution, and ship it fast.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="mailto:hello@brightporch.dev"
-                className="font-space text-[14px] font-medium text-[#0A0A0A] bg-white px-8 py-4 rounded-sm hover:bg-white/90 transition-colors cursor-pointer text-center"
-              >
-                Work With Us
-              </a>
-              <a
-                href="/templates/plumber/1"
-                className="font-space text-[14px] font-medium text-white border border-white/15 px-8 py-4 rounded-sm hover:border-white/30 transition-colors cursor-pointer text-center"
-              >
-                See Our Work
-              </a>
-            </div>
+            <a
+              href="#contact"
+              className="font-space text-[14px] font-medium text-[#0A0A0A] bg-white px-8 py-4 rounded-sm hover:bg-white/90 transition-colors cursor-pointer text-center inline-block"
+            >
+              Work With Us
+            </a>
           </div>
         </div>
       </section>
@@ -87,7 +70,7 @@ export default function Home() {
                 <div className="font-archivo text-3xl md:text-4xl font-800 text-white tracking-tight">
                   {stat.value}
                 </div>
-                <div className="font-space text-sm text-white/30 mt-1">
+                <div className="font-space text-sm text-white/40 mt-1">
                   {stat.label}
                 </div>
               </div>
@@ -135,7 +118,7 @@ export default function Home() {
                   <h3 className="font-archivo text-lg font-700 text-white mb-3 tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="font-space text-[15px] text-white/35 leading-relaxed">
+                  <p className="font-space text-[15px] text-white/50 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -168,8 +151,8 @@ export default function Home() {
               "Roofers",
               "Interior Designers",
               "Custom Home Builders",
-              "Landscape Architects",
-              "Pool Builders",
+              "Property Managers",
+              "Managed Service Providers",
               "Remodelers",
             ].map((industry) => (
               <div
@@ -228,7 +211,7 @@ export default function Home() {
                 <h3 className="font-archivo text-lg font-700 text-white mb-3 tracking-tight">
                   {step.title}
                 </h3>
-                <p className="font-space text-[15px] text-white/35 leading-relaxed">
+                <p className="font-space text-[15px] text-white/50 leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -237,34 +220,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="border-t border-white/5 py-20 md:py-28 px-6">
+      {/* Contact */}
+      <section id="contact" className="scroll-mt-24 border-t border-white/5 py-20 md:py-28 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-[2fr_1fr] gap-12 items-end">
+          <div className="grid md:grid-cols-[1fr_1fr] gap-16 items-start">
             <div>
               <h2 className="font-archivo text-4xl md:text-5xl lg:text-6xl font-900 text-white tracking-tight leading-[0.95] mb-6">
                 Got a problem<br />
                 worth<br />
                 <span className="text-[#2563EB]">solving?</span>
               </h2>
-              <p className="font-space text-lg text-white/35 leading-relaxed max-w-lg">
+              <p className="font-space text-lg text-white/50 leading-relaxed max-w-lg mb-8">
                 Tell us what&apos;s broken. We&apos;ll tell you if we can fix it and what it would take.
               </p>
+              <div className="flex items-center gap-3">
+                <span className="font-space text-[15px] text-white/40">or email us directly:</span>
+                <a
+                  href="mailto:hello@mail.brightporch.dev"
+                  className="font-space text-[15px] font-medium text-white/70 hover:text-white transition-colors"
+                >
+                  hello@mail.brightporch.dev
+                </a>
+              </div>
             </div>
-            <div className="flex flex-col gap-3">
-              <a
-                href="mailto:hello@brightporch.dev"
-                className="font-space text-[14px] font-medium text-[#0A0A0A] bg-white px-8 py-4 rounded-sm hover:bg-white/90 transition-colors cursor-pointer text-center"
-              >
-                Let&apos;s Talk
-              </a>
-              <a
-                href="mailto:hello@brightporch.dev"
-                className="font-space text-[14px] font-medium text-white/35 text-center py-2 hover:text-white transition-colors cursor-pointer"
-              >
-                hello@brightporch.dev
-              </a>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -282,9 +261,11 @@ export default function Home() {
               Bright Porch
             </span>
           </div>
-          <div className="font-space text-sm text-white/20 flex flex-wrap gap-x-6 gap-y-2">
+          <div className="font-space text-sm text-white/40 flex flex-wrap gap-x-6 gap-y-2">
             <span>Software studio</span>
-            <span>hello@brightporch.dev</span>
+            <a href="mailto:hello@mail.brightporch.dev" className="hover:text-white/60 transition-colors">
+              hello@mail.brightporch.dev
+            </a>
           </div>
         </div>
       </footer>
