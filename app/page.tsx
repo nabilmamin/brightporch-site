@@ -236,10 +236,10 @@ export default function Home() {
               <div className="flex items-center gap-3">
                 <span className="font-space text-[15px] text-white/40">or email us directly:</span>
                 <a
-                  href="mailto:hello@mail.brightporch.dev"
+                  href="mailto:hello@brightporch.dev"
                   className="font-space text-[15px] font-medium text-white/70 hover:text-white transition-colors"
                 >
-                  hello@mail.brightporch.dev
+                  hello@brightporch.dev
                 </a>
               </div>
             </div>
@@ -263,8 +263,8 @@ export default function Home() {
           </div>
           <div className="font-space text-sm text-white/40 flex flex-wrap gap-x-6 gap-y-2">
             <span>Software studio</span>
-            <a href="mailto:hello@mail.brightporch.dev" className="hover:text-white/60 transition-colors">
-              hello@mail.brightporch.dev
+            <a href="mailto:hello@brightporch.dev" className="hover:text-white/60 transition-colors">
+              hello@brightporch.dev
             </a>
           </div>
         </div>

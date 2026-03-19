@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     },
     body: JSON.stringify({
       from: "Bright Porch <hello@mail.brightporch.dev>",
-      to: ["hello@mail.brightporch.dev"],
+      to: ["hello@brightporch.dev"],
       reply_to: email,
       subject: `Contact form: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
